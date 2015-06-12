@@ -13,7 +13,7 @@ public class Teeth extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
-        RevManager.setSwitches(this, 1, 0, 0, 0, false);
+        RevManager.setSwitches(this, 1, 1, 1, 0, true);
         Rev.initialize("com.rev.system.Rev.INHERIT_CONFIG", this);
     }
 }
