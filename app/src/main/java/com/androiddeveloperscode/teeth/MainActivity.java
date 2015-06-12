@@ -5,10 +5,6 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 
-import com.rev.android.app.RevLogHandler;
-import com.rev.android.app.RevToastListener;
-import com.rev.java.util.RevObject;
-
 
 public class MainActivity extends Activity {
 
@@ -17,20 +13,8 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        RevToastListener listener = new RevToastListener() {
-            @Override
-            protected void onCreateToast(int i) {
-                RevLogHandler.i(MainActivity.this, "Toast created");
-            }
 
-            @Override
-            protected void onDestroyToast() {
-                RevLogHandler.i(MainActivity.this, "Toast destroyed");
-            }
-        };
 
-        RevObject.toast.toastLong(this, "Hello, World!").addListener(listener);
-        
     }
 
 

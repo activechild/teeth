@@ -2,15 +2,175 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin"
     tools:context=".MainActivity">
 
-    <TextView
-        android:text="@string/hello_world"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/landing_page"
+        android:layout_gravity="right"
+        android:id="@+id/dinosaur_pic"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/water"
+        android:layout_marginBottom="0dp"></RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/water"
+        android:background="@drawable/dino_water"
+        android:layout_gravity="right"></RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/GreetingLayout"
+        android:layout_marginBottom="90dp">
+
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Teeth"
+                android:layout_marginTop="40dp"
+                android:textColor="#ff1c9621"
+                android:textSize="25dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+
+            </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Join us as we explore"
+            android:id="@+id/textView2"
+            android:layout_marginTop="190dp"
+            android:textSize="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="dinosaurs"
+            android:id="@+id/textView3"
+            android:layout_below="@+id/textView2"
+            android:layout_centerHorizontal="true"
+            android:textColor="#ff21c126"
+            android:textSize="30dp" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/GreetingLayout"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Login with Facebook"
+            android:id="@+id/facebook_login_btn"
+            android:textColor="@android:color/white"
+            android:background="#c81854a2"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:textSize="15sp"
+            android:textStyle="normal"
+            android:fontFamily="courier"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="10dp" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/facebook_login_btn"
+            android:layout_centerHorizontal="true"
+            android:weightSum="2"
+            android:id="@+id/linearLayout">
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Login with Email"
+                android:id="@+id/button2"
+                android:textSize="12sp"
+                android:background="#2cdce4e2"
+                android:textStyle="normal"
+                android:fontFamily="courier"
+                android:layout_gravity="bottom"
+                android:layout_weight="1"/>
+
+            <View
+                android:layout_width="5dp"
+                android:layout_height="1dp"
+                android:layout_gravity="bottom"/>
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Register"
+                android:id="@+id/button4"
+                android:layout_gravity="bottom"
+                android:textStyle="normal"
+                android:fontFamily="courier"
+                android:textSize="12sp"
+                android:background="#2cdce4e2"
+                android:layout_weight="1"/>
+            </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Continue as a guest"
+            android:id="@+id/textView8"
+            android:layout_below="@+id/linearLayout"
+            android:layout_centerHorizontal="true"
+            android:singleLine="false"
+            android:layout_marginTop="25dp"
+            android:textSize="13sp"
+            android:fontFamily="courier"/>
+
+
+    </RelativeLayout>
 
 </RelativeLayout>
+
+
+<!--
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#####################################################################
+
+ -->

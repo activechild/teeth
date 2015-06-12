@@ -4,5 +4,6 @@
     <string name="app_name">Teeth</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <color name="btn_color_off">#ff09a900</color>
 
 </resources>
