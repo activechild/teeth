@@ -4,6 +4,21 @@
     <string name="app_name">Teeth</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
-    <color name="btn_color_off">#ff09a900</color>
+
+    <color name="dino_app_theme_colur">#ff09a900</color>
+
+    <!-- Landing page colurs -->
+        <!-- login with email/register btn press colurs -->
+        <color name="login_register_unpressed">#2cdce4e2</color>
+        <color name="login_register_pressed">#52dce4e2</color>
+
+        <!-- login with facebook btn press colurs -->
+        <color name="facebook_login_pressed">#c8187cd1</color>
+        <color name="facebook_login_unpressed">#c81854a2</color>
+
+        <!-- landing page button texts -->
+        <string name="facebook_login_btn_txt">Login with Facebook</string>
+        <string name="email_login_btn_txt">Login with Email</string>
+        <string name="register_btn_txt">Register</string>
 
 </resources>

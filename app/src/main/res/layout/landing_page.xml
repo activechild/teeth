@@ -2,33 +2,25 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:id="@+id/landing_pg_container">
 
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/landing_page"
+        android:background="@drawable/langing_page"
         android:layout_gravity="right"
-        android:id="@+id/dinosaur_pic"
+        android:id="@+id/land_pg_background_pic"
         android:layout_alignParentTop="true"
-        android:layout_above="@+id/water"
         android:layout_marginBottom="0dp"></RelativeLayout>
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="190dp"
-        android:layout_alignParentBottom="true"
-        android:id="@+id/water"
-        android:background="@drawable/dino_water"
-        android:layout_gravity="right"></RelativeLayout>
 
     <RelativeLayout
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_alignParentStart="true"
-        android:id="@+id/GreetingLayout"
+        android:id="@+id/land_pg_greeting_layout"
         android:layout_marginBottom="90dp">
 
 
@@ -36,7 +28,8 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true">
+            android:layout_centerHorizontal="true"
+            android:id="@+id/land_pg_app_title_container">
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -46,7 +39,8 @@
                 android:textColor="#ff1c9621"
                 android:textSize="25dp"
                 android:layout_alignParentTop="true"
-                android:layout_centerHorizontal="true" />
+                android:layout_centerHorizontal="true"
+                android:id="@+id/land_pg_app_title" />
 
             </RelativeLayout>
 
@@ -55,19 +49,24 @@
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="Join us as we explore"
-            android:id="@+id/textView2"
+            android:textStyle="normal"
+            android:fontFamily="courier-new"
+            android:id="@+id/land_pg_greeting_txt_no_color"
             android:layout_marginTop="190dp"
             android:textSize="30dp"
             android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true" />
+            android:layout_centerHorizontal="true"
+            android:textColor="@android:color/white" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="dinosaurs"
-            android:id="@+id/textView3"
-            android:layout_below="@+id/textView2"
+            android:textStyle="normal"
+            android:fontFamily="courier-new"
+            android:id="@+id/land_pg_greeting_txt_color"
+            android:layout_below="@+id/land_pg_greeting_txt_no_color"
             android:layout_centerHorizontal="true"
             android:textColor="#ff21c126"
             android:textSize="30dp" />
@@ -80,17 +79,18 @@
         android:layout_height="match_parent"
         android:layout_centerHorizontal="true"
         android:layout_alignParentBottom="true"
-        android:layout_below="@+id/GreetingLayout"
+        android:layout_below="@+id/land_pg_greeting_layout"
         android:paddingLeft="12dp"
-        android:paddingRight="12dp">
+        android:paddingRight="12dp"
+        android:id="@+id/landing_pg_login_container">
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Login with Facebook"
-            android:id="@+id/facebook_login_btn"
+            android:text="@string/facebook_login_btn_txt"
+            android:id="@+id/landing_pg_facebook_login_btn"
             android:textColor="@android:color/white"
-            android:background="#c81854a2"
+            android:background="@drawable/facebook_login_selector"
             android:paddingLeft="40dp"
             android:paddingRight="40dp"
             android:textSize="15sp"
@@ -104,50 +104,54 @@
             android:orientation="horizontal"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/facebook_login_btn"
+            android:layout_below="@+id/landing_pg_facebook_login_btn"
             android:layout_centerHorizontal="true"
             android:weightSum="2"
-            android:id="@+id/linearLayout">
+            android:id="@+id/landing_pg_login_reg_container">
             <Button
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:text="Login with Email"
-                android:id="@+id/button2"
+                android:text="@string/email_login_btn_txt"
+                android:id="@+id/landing_pg_email_login_btn"
                 android:textSize="12sp"
-                android:background="#2cdce4e2"
+                android:background="@drawable/login_register_selector"
                 android:textStyle="normal"
                 android:fontFamily="courier"
                 android:layout_gravity="bottom"
-                android:layout_weight="1"/>
+                android:layout_weight="1"
+                android:textColor="@android:color/white" />
 
             <View
                 android:layout_width="5dp"
                 android:layout_height="1dp"
-                android:layout_gravity="bottom"/>
+                android:layout_gravity="bottom"
+                android:id="@+id/landing_pg_view_seperator" />
             <Button
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:text="Register"
-                android:id="@+id/button4"
+                android:text="@string/register_btn_txt"
+                android:id="@+id/landing_pg_register_btn"
                 android:layout_gravity="bottom"
                 android:textStyle="normal"
                 android:fontFamily="courier"
                 android:textSize="12sp"
-                android:background="#2cdce4e2"
-                android:layout_weight="1"/>
+                android:background="@drawable/login_register_selector"
+                android:layout_weight="1"
+                android:textColor="@android:color/white" />
             </LinearLayout>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Continue as a guest"
-            android:id="@+id/textView8"
-            android:layout_below="@+id/linearLayout"
+            android:id="@+id/landing_pg_continue_as_guest_btn"
+            android:layout_below="@+id/landing_pg_login_reg_container"
             android:layout_centerHorizontal="true"
             android:singleLine="false"
             android:layout_marginTop="25dp"
             android:textSize="13sp"
-            android:fontFamily="courier"/>
+            android:fontFamily="courier"
+            android:textColor="@android:color/white" />
 
 
     </RelativeLayout>

@@ -9,6 +9,7 @@
     <style name="AppTheme" parent="android:Theme.Holo.Light">
         <!-- Customize your theme here. -->
         <item name="android:actionBarStyle">@style/ActionBar</item>
+        <item name="android:windowTranslucentStatus">true</item>
     </style>
 
     <style name="MainTheme" parent="android:Theme.Holo.Light.NoActionBar">
@@ -18,7 +19,7 @@
     <!-- ActionBar stock theme. -->
     <style name="ActionBar" parent="android:Widget.Holo.Light.ActionBar.Solid.Inverse">
         <!-- Customize your theme here. -->
-        <item name="android:background">@color/btn_color_off</item>
+        <item name="android:background">@color/dino_app_theme_colur</item>
     </style>
 
 </resources>
